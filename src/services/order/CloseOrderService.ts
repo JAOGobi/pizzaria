@@ -1,6 +1,6 @@
 import prismaClient from "../../prisma";
 
-export default class CloseOrderService {
+class CloseOrderService {
     async execute(id: string) {
         const itemsPedido = await prismaClient.item.findMany({
             where: {
@@ -21,3 +21,5 @@ export default class CloseOrderService {
         return { itemsPedido, total };
     }
 }
+
+export { CloseOrderService }

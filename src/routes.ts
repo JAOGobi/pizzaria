@@ -18,8 +18,7 @@ import { RemoveItemController } from "./controllers/order/RemoveItemController";
 import { ListByDateOrderController } from "./controllers/order/ListByDateOrderController";
 import { ListByDateOrderFinishController } from "./controllers/order/ListByDateOrderFinishController";
 import { FinishOrderController } from "./controllers/order/FinishOrderController";
-import CloseOrderController from "./controllers/order/CloseOrderController";
-
+import { CloseOrderController } from "./controllers/order/CloseOrderController";
 
 const router: Router = Router();
 const upload = multer(uploadConfig.upload('./tmp'));
